@@ -81,3 +81,62 @@ background-position: center ;
         opacity: 1%;
     }
 }
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-position: center;
+    background-size: cover;
+    padding: 0 5%; /* Adjusted padding for smaller screens */
+}
+
+.logo{
+    width: 80%; /* Adjusted logo width for smaller screens */
+    max-width: 300px; /* Set a maximum width */
+    padding: 10px 0;
+    cursor: pointer;
+}
+.content button{
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    padding: 8px 15px; /* Adjusted padding for smaller screens */
+    font-size: 14px; /* Reduced font size for mobile view */
+    display: inline-block; /* Remove flex display for mobile view */
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+.rocket{
+    display: none; /* Hide rocket for mobile view */
+}
+
+/* Add media query for screens with a max-width of 600px (example value, adjust as needed) */
+@media (max-width: 600px) {
+    .content{
+        padding-top: 30%; /* Adjusted padding for smaller screens */
+    }
+
+    .content h1{
+        font-size: 30px; /* Further reduced font size for smaller screens */
+    }
+
+    .content p{
+        font-size: 16px; /* Further reduced font size for smaller screens */
+    }
+
+    .content button{
+        padding: 6px 12px; /* Further adjusted padding for smaller screens */
+    }
+}
