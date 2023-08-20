@@ -14,7 +14,7 @@ background-position: center ;
  padding: 0 8%;  
 }
 .logo{
-    width: 700px;
+    width: 450px;
     padding: 10px 0;
     cursor: pointer;
 }
@@ -28,7 +28,7 @@ background-position: center ;
     font-size: 64px;
     font-weight: 600;
 }
-.content h1 span{
+.content h2 span{
    color: #ff3753; 
 }
 .content P{
@@ -102,13 +102,13 @@ background-position: center ;
 
 .logo{
     width: 80%; /* Adjusted logo width for smaller screens */
-    max-width: 300px; /* Set a maximum width */
+    max-width: 100px; /* Set a maximum width */
     padding: 10px 0;
     cursor: pointer;
 }
 .content button{
     background: transparent;
-    border: 2px solid #fff;
+    border: 2px solid #e91d1d;
     outline: none;
     padding: 8px 15px; /* Adjusted padding for smaller screens */
     font-size: 14px; /* Reduced font size for mobile view */
@@ -138,5 +138,25 @@ background-position: center ;
 
     .content button{
         padding: 6px 12px; /* Further adjusted padding for smaller screens */
+    }
+}
+/* Rocket animation styles */
+.rocket {
+    width: 150px;
+    position: absolute;
+    right: 1lh;
+    bottom: 10%;
+    display: block;
+    animation: rocket 10s linear infinite;
+}
+
+@keyframes rocket {
+    0% {
+        bottom: 0;
+        opacity: 0;
+    }
+    100% {
+        bottom: 105%;
+        opacity: 1;
     }
 }
